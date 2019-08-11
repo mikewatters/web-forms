@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Web Forms</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
   </head>
   <body>
     <h1>Pet Adoption Application</h1>
@@ -10,20 +11,41 @@
       <label>Your name:
         <input type="text" name="applicantName">
       </label>
-
       <label>Your email:
-      <input type="email" name="applicantEmail">
+        <input type="email" name="applicantEmail">
       </label>
-
       <label for="city">Your city:</label>
-      <input id="city" type="text" name="applicantCity">
+        <input id="city" type="text" name="applicantCity">
+      <label>How many pets are in your home currently?
+        <input type="number" name="petCount">
+      </label>
+      <label>Why boo?
+        <textarea name="applicantReason" rows="4" cols="50">Because I don't have enough cat hair on my sofa, etc.</textarea>
+      </label>
+      <fieldset>
+        <legend>What types of animals are you interested in adopting?</legend>
+        <label><input type="checkbox" name="species" value="dogs">Dogs</label>
+        <label><input type="checkbox" name="species" value="cats">Cats</label>
+        <label><input type="checkbox" name="species" value="collies">Collies</label>
+        <label><input type="checkbox" name="species" value="corgis">Corgis</label>
+      </fieldset>
+      <fieldset>
+        <legend>Are you interested in adopting special needs pets?</legend>
+        <label><input type="radio" name="special" value="yes">Yes</label>
+        <label><input type="radio" name="special" value="no">No</label>
+      </fieldset>
 
-<label>How many pets are in your home currently?
-<input type="number" name="petCount">
-</label>
+      <label>How many hours a day is someone usually home?</label>
+      <select name="hours">
+        <option value="">Please select</option>
+        <option value="few">less than 10</option>
+        <option value="some">10-16</option>
+        <option value="many">more than 16</option>
+      </select>
 
-<label>Your password:
-<input type="password" name="accountPW"></label>
+      <label>Your password:
+        <input type="password" name="accountPW"></label>
+
       <input type="submit" value="Apply now!">
     </form>
   </body>
